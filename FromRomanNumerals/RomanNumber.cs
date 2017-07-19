@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace GalacticMerchant
+namespace FromRomanNumerals
 {
     public static class RomanNumber
     {

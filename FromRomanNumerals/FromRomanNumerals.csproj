@@ -7,8 +7,8 @@
     <ProjectGuid>{E0C24677-9200-4813-83E1-4A6769B62DCE}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GalacticMerchant</RootNamespace>
-    <AssemblyName>GalacticMerchant</AssemblyName>
+    <RootNamespace>FromRomanNumerals</RootNamespace>
+    <AssemblyName>FromRomanNumerals</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,15 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
-    <Compile Include="ComponentLogger.cs" />
-    <Compile Include="StatementBase.cs" />
-    <Compile Include="Statements\MarketValueQuery.cs" />
-    <Compile Include="Statements\RomanNumberQuery.cs" />
-    <Compile Include="Statements\RomanAliasDefinition.cs" />
-    <Compile Include="Statements\MarketValueDefinition.cs" />
-    <Compile Include="Statements\AnyOtherStatement.cs" />
-    <Compile Include="IStatement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RomanNumber.cs" />
