@@ -43,12 +43,12 @@ namespace FromRomanNumerals
 
             if (string.IsNullOrEmpty(romanNumber)) { return false; }
 
-            string previousDigit = InvalidCharAsStarterEliminatesAtLeastOneIfClause;
-            int countSameDigits = 0;
-            bool justSubtracted = false;
+            var previousDigit = InvalidCharAsStarterEliminatesAtLeastOneIfClause;
+            var countSameDigits = 0;
+            var justSubtracted = false;
 
-            foreach (char romanDigit in romanNumber) {
-                var nextDigit = new String(romanDigit, 1);
+            foreach (var romanDigit in romanNumber) {
+                var nextDigit = new string(romanDigit, 1);
                 if (!Digits.ContainsKey(nextDigit)) { return false; }
 
                 if (previousDigit == nextDigit) {
