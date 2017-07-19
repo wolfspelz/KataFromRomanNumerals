@@ -6,13 +6,17 @@ namespace FromRomanNumerals
     {
         static void Main()
         {
-            Console.WriteLine("Please enter a roman number (ENTER to exit):");
+            Console.WriteLine("Please enter a roman number (<quit> to exit) [MMXVII]:");
             string line;
-            while ((line = Console.ReadLine()) != "")
+            while ((line = Console.ReadLine()) != "quit")
             {
                 try
                 {
                     var roman = line;
+                    if (roman == "")
+                    {
+                        roman = "MMXVII";
+                    }
                     var latin = RomanNumber.ToDecimal(roman?.ToUpper());
                     Console.WriteLine($"{roman} is {latin}");
                 }
